@@ -1,0 +1,65 @@
+@import "../../../../global";
+
+.userdata {
+  h1 {
+    color: $secondary-alt;
+  }
+  .user-card {
+    // margin: 1rem;
+    padding: 1rem 2rem;
+    margin: 0 8px;
+    border-radius: 20px;
+    // padding-top: 1rem;
+    background-color: #31314a;
+  }
+  .propic {
+    width: 30%;
+    border-radius: 50%;
+  }
+  padding-top: 1em;
+  background: $bg-alt;
+  height: 100vh;
+  .user-data {
+    .row {
+      flex-wrap: nowrap;
+      padding: 0rem 2.5rem;
+      margin-right: -4px;
+      .col-lg-6 {
+        margin-top: 1rem;
+        text-align: left;
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        scrollbar-width: none;
+        h1 {
+          font-size: 1.8rem;
+          color: $secondary-alt;
+          margin-bottom: 0px;
+          font-weight: 600;
+        }
+        h3 {
+          font-size: 12px;
+          color: #dadada;
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $media-width) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    .col-lg-6 {
+      text-align: center!important;
+      padding: 0.8rem 1.8rem;
+      h1 {
+        font-size: 1.8rem !important;
+      }
+    }
+    .row {
+      flex-direction: column !important;
+    }
+  }
+}

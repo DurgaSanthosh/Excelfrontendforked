@@ -1,0 +1,87 @@
+@import "../../../../global";
+
+.sharesInHand {
+  max-height: 75vh;
+  overflow-y: scroll;
+  table {
+    color: lighten($primary, 30%);
+    border-color: black !important;
+  }
+  thead,
+  tbody {
+    .btn {
+      color: white;
+      background: $primary-alt;
+    }
+  }
+  th,
+  td {
+    font-size: 0.8em;
+  }
+
+  .nav {
+    .nav-link {
+      font-size: 0.7em;
+      padding: 0.7em;
+    }
+  }
+  background-color: $bg;
+  padding-top: 1em;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: dimgrey;
+  }
+
+  .h2 {
+    color: $primary;
+  }
+  .h1,
+  h2 {
+    padding-bottom: 0.3em;
+  }
+  ul {
+    .active {
+      background-color: lighten($primary, 30%);
+      color: black !important;
+    }
+    span.nav-link {
+      background: none;
+      color: lighten($primary, 30%);
+      cursor: pointer;
+    }
+    span.nav-link.active:hover {
+      color: black;
+    }
+  }
+  @media screen and (max-width: $media-width) {
+    padding-top: 1em;
+    font-size: 0.7rem;
+
+    table {
+      font-size: 0.8rem;
+    }
+
+    th,
+    td {
+      font-size: 1em;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 3.2em;
+    }
+    .nav {
+      .nav-link {
+        font-size: 0.7rem;
+        padding: 0.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../../../global';
+
+.company-item {
+  padding: 13px 16px;
+  border-bottom: 1px solid #3a3a3a;
+  cursor: pointer;
+  background: $bg-alt;
+  a {
+    text-decoration: none;
+    color: #efefff;
+  }
+  &:hover {
+    background-color: $bg;
+  }
+  .row {
+    margin: 0 !important;
+    h1 {
+      font-weight: 600;
+      color: #efefef;
+      font-size: 2.5em;
+    }
+    .company-name {
+      color: #d1d1d1;
+      font-weight: 500;
+      // max-width: 10vw;
+    }
+    .data {
+      margin-top: 0.67em;
+      font-size: 1em;
+      .current-price {
+        font-family: $font-secondary;
+        padding: 7px 15px;
+        display: inline-block;
+        border-radius: 5px;
+        margin-left: 0.4em;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .fa-arrow-circle-right {
+        float: right;
+        display: inline-block;
+        margin-top: 1em;
+        margin-right: 4px;
+      }
+    }
+  }
+  @media screen and (max-width: $media-width) {
+    .row {
+      h1 {
+        font-size: 1.4rem;
+      }
+      .company-name {
+        font-size: 0.8rem;
+        max-width: 70vw;
+      }
+      .data {
+        font-size: 1.4em;
+      }
+    }
+  }
+}

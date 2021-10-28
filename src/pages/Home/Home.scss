@@ -1,0 +1,21 @@
+@import "../../global";
+
+.cell {
+  cursor: pointer;
+  // padding: 30px;
+  font-weight: 800;
+  font-size: 1.7em;
+  padding: 1rem;
+  // background-color: yellow;
+  color: $primary-alt;
+  font-family: $font-homePage;
+  
+
+  @media screen and (max-width: $media-width) {
+    padding: 0.5rem 3rem;
+    font-size: 1em;
+  }
+}
+body{
+  background: radial-gradient(49.39% 49.39% at 50% 65.04%, rgba(54, 3, 132, 0.4) 0%, #262626 100%);
+}

@@ -1,0 +1,17 @@
+@import "../../global";
+
+.dalalbull {
+  max-height: 100vh;
+  // overflow: hidden;
+  @media screen and (max-width: $media-width) {
+    overflow-y: auto;
+  }
+  @media screen and (max-width: $media-width) {
+    // font-size: 0.7em;
+    overflow-x: hidden;
+  }
+}
+
+.min-h-dalalbull-play {
+  min-height: calc(100vh - 6rem);
+}

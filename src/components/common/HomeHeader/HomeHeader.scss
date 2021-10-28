@@ -1,0 +1,226 @@
+@import "../../../global";
+
+.big-header-bg {
+  height: 15vh;
+  background-color: $bg-alt;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  position: fixed;
+  z-index: 10;
+
+  .excel-logo {
+    height: 7em;
+  }
+  .excel-logo-container {
+    margin-right: 50%;
+    display: flex;
+    align-items: center;
+  }
+  // .logo-container-bg {
+  //   display: flex;
+  //   width: 60vw;
+  //   height: 20vh;
+  //   background-color: $primary-dark;
+  //   clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  //   -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  // }
+  // .logo-container {
+  //   z-index: 1;
+  //   position: absolute;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   // background-color: $primary-alt;
+  //   width: 50vw;
+  //   height: 25vh;
+  //   border-radius: 0 0 2rem 2rem;
+  //   // clip-path: polygon(0 0, 100% 0, 85% 120%, 15% 120%);
+  //   // -webkit-clip-path: polygon(0 0, 100% 0, 85% 120%, 15% 120%);
+  // }
+
+  // .logo-container:before {
+  //   content: "";
+  //   z-index: -1;
+  //   position: absolute;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-repeat: no-repeat;
+  //   background-size: 400% 400%;
+  //   filter: blur(4px);
+  //   background-image: linear-gradient(
+  //     to right,
+  //     red,
+  //     green,
+  //     blue,
+  //     red,
+  //     green,
+  //     blue
+  //   );
+  //   width: calc(50vw + 8px);
+  //   height: calc(40vh + 8px);
+  //   border-radius: 0 0 12px 12px;
+  //   animation: rainbow_animation 12s ease-in infinite;
+  //   transform: perspective(200px) rotateX(40deg);
+  //   -webkit-transform: perspective(400px) rotateX(-40deg);
+  // }
+
+  // .logo-container:after {
+  //   z-index: -1;
+  //   content: "";
+  //   position: absolute;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-color: darken($primary, 1%);
+  //   width: calc(50vw);
+  //   height: calc(40vh);
+  //   filter: blur(1px);
+  //   border-radius: 0 0 12px 12px;
+  //   transform: perspective(200px) rotateX(40deg);
+  //   -webkit-transform: perspective(400px) rotateX(-40deg);
+  // }
+  .logo {
+    max-width: 60%;
+    max-height: 70%;
+    margin-bottom: 0.4rem;
+  }
+
+  .userDetails {
+    font-size: 1.3em;
+    min-width: 12em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .propic {
+    width: 6rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin: 0.25rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.8;
+  }
+
+  .btn {
+    background-color: transparent;
+    color: $primary;
+    font-weight: 600;
+    color: #6a6a9a;
+
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus {
+      background-color:  #21212a;
+      box-shadow: none;
+    }
+  }
+
+  .dropdown-menu{
+    background-color: #31314a;
+    color: #efefef;
+    a:hover {
+      background-color: #31314a;
+      cursor: pointer;
+    }
+    a:focus {
+      background-color: #31314a;
+    }
+  }
+
+  @media screen and (max-width: $media-width) {
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 10%;
+    .userDetails {
+      font-size: 1.3em;
+      min-width: 3.5em;
+    }
+    .btn {
+      padding: 0.5em;
+      font-size: 14px;
+    }
+    .excel-logo {
+      height: 2.4em;
+    }
+    .logo-container {
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 11vh;
+      .logo {
+        max-width: 60%;
+        max-height: 85%;
+        margin-left: 0.4rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    .logo-container:before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: 400% 400%;
+      top: -8px;
+      filter: blur(4px);
+      background-image: linear-gradient(
+        to right,
+        red,
+        green,
+        blue,
+        red,
+        green,
+        blue
+      );
+      width: calc(40vw + 2px);
+      height: calc(13.5vh + 8px);
+      border-radius: 0 0 8px 8px;
+      transform: perspective(200px) rotateX(40deg);
+      -webkit-transform: perspective(100px) rotateX(-30deg);
+    }
+
+    .logo-container:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      display: flex;
+      background-color: darken($primary-alt, 1%);
+      width: calc(40vw);
+      height: calc(13.5vh);
+      filter: blur(0.5px);
+      top: -2px;
+      border-radius: 0 0 8px 8px;
+      top: -10;
+      transform: perspective(200px) rotateX(40deg);
+      -webkit-transform: perspective(100px) rotateX(-30deg);
+    }
+
+    .propic {
+      height: 30px;
+      width:30px
+    }
+  }
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}

@@ -1,0 +1,117 @@
+@import "../../../global";
+
+.hide-ranklist {
+  // margin-left: calc(100vw - 65vw) !important;
+  transform: translateX(100%);
+}
+
+.hidable-ranklist {
+  // margin-left: 4vw;
+  width: 30vw;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: dimgrey;
+}
+
+::-moz-scrollbar {
+  background-color: transparent;
+  width: 4px;
+}
+::-moz-scrollbar-track {
+  background-color: transparent;
+}
+::-moz-scrollbar-thumb {
+  background-color: dimgrey;
+}
+
+.ranklist {
+  background-color: rgba(50, 50, 100, 0.1);
+  border-left: 4px solid $primary-alt;
+  border-right: 4px solid $primary-alt;
+  overflow-y: auto;
+  position: i;
+  top: 0;
+  height: 100%;
+  padding: 0%;
+  // margin-left: 100%;
+  transition: 1s;
+
+  .heading {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: $primary;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: dimgrey;
+  }
+  .table {
+    border-collapse: collapse;
+    border: none !important;
+    font-size: 1.5rem;
+    color: $secondary-alt;
+  }
+
+  td,
+  th {
+    border: none !important;
+  }
+
+  tr {
+    background-color: rgba($color: $primary, $alpha: 0.06);
+    &:nth-child(even) {
+      background-color: rgba($color: $primary, $alpha: 0.1);
+    }
+  }
+
+  table .propic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  td {
+    font-weight: 700;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    color: $primary;
+  }
+
+  th {
+    font-weight: 600;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    color: rgba($color: $primary, $alpha: 0.6);
+  }
+
+  .rank-level {
+    // text-align: center;
+  }
+
+  @media screen and (max-width: $media-width) {
+    .table,
+    td,
+    th {
+      font-size: 1rem;
+    }
+  }
+}

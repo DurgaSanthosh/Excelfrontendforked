@@ -1,0 +1,55 @@
+@import "../../../global.scss";
+
+@media screen and (min-width: $media-width) {
+  .kryptos-page {
+    position: relative;
+    min-height: calc(100vh - 5rem);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    // width: 100vw;
+  }
+  .winner-screen {
+    .caption {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+  }
+
+  .abs-rank {
+    height: 100%;
+    position: absolute;
+    position: -webkit-sticky;
+    bottom: 0; /* required */
+    right: 0;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    // right: 0;
+  }
+}
+
+@media screen and (max-width: $media-width) {
+  .rank {
+    display: none;
+  }
+  .winner-screen {
+    .caption {
+      font-size: 1rem;
+    }
+    .title {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.winner-screen {
+  color: $primary;
+  .caption {
+    color: aliceblue;
+  }
+  .top-blue {
+    border-top: 4px solid $primary;
+  }
+}
